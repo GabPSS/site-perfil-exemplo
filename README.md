@@ -9,4 +9,4 @@ O site faz uso do framework CSS Bootstrap versão 4.
 ## Visualizando a página
 
 Para fazer uso da página, basta clonar o repositório através do botão acima, ou então através do comando:
-`git clone https://github.com/GabPSS/site-perfil-exemplo` e, em seguida, abrindo o arquivo `index.html` no seu navegador de escolha.
+`git clone https://github.com/GabPSS/site-perfil-exemplo` e, em seguida, abrir o arquivo `index.html` no seu navegador de escolha.
