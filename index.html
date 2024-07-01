@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <title>Perfil</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Barra de navegação do site -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <!-- Marca principal -->
+        <a class="navbar-brand" href="#">Postnet</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Feed</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Meu Perfil <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Caixa de entrada</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar por amigos...">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+    <!-- Banner da página -->
+    <header>
+        <div class="banner-backdrop">        
+            <div class="bc1">
+                <div class="banner container">
+                    <img src="" alt="Foto de perfil" id="banner-profile-picture">
+                    <div class="user-info">
+                        <h2 id="user-name">Exemplo</h2>
+                        <h6 id="user-bio">Exemplo de biografia</h6>
+                        <nav class="nav nav-tabs">
+                            <a href="#" class="nav-link active">Meus posts</a>
+                            <a href="#" class="nav-link">Minhas fotos</a>
+                            <a href="#" class="nav-link">Meus amigos</a>
+                        </nav>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Feed de últimos posts -->
+                <main>        
+                    <div class="feed-container">
+                        <h3>Últimos posts</h3>
+                        <hr>
+                        <div id="feed"></div>
+                    </div>
+                </main>
+            </div>
+            <div class="col-md-4">
+                <!-- Painel lateral de informações -->
+                <aside>
+                    <div class="info-panel-container card">
+                        <div class="card-body">
+                            <h4>Sobre mim</h4>
+                            <hr>
+                            <div id="author-description"></div>
+                            <a name="btnEdit" id="btnEdit" class="btn btn-primary mt-3" href="#" role="button" data-toggle="modal" data-target="#editarInfoPerfil" onclick="updateModalInfo()">Editar perfil</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>            
+        </div>
+    </div>
+
+    <!-- Modal de edição de informações -->
+    <div class="modal fade" id="editarInfoPerfil" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Editar perfil</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="user-name-edit">Nome do usuário: </label>
+                        <input type="text" name="user-name" id="user-name-edit" class="form-control">
+                        <label for="user-bio-edit">Biografia: </label>
+                        <input type="text" name="user-bio" id="user-bio-edit" class="form-control">
+                        <label for="user-description-edit">Sobre você: </label>
+                        <textarea name="user-description" id="user-description-edit" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="saveModalInfo()">Salvar informações</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé da página -->
+    <footer class="container mb-4 mt-4 text-center">
+        <a href="PRIVACY" class="mr-3">Política de Privacidade</a>
+        <a href="NOTICE">Termos de uso</a>
+    </footer>
+    
+    <!-- Javascript do site -->
+    <script src="script.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

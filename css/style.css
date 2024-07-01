@@ -1,0 +1,77 @@
+/* Regras do Banner */
+
+#banner-profile-picture {
+    position: relative;
+    top: -32px;
+    width: 98px;
+    height: 98px;
+    object-fit: cover;
+    box-shadow: 2px 2px 4px #00000042;
+}
+
+.user-info {
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    display: flex;
+    background-color: white;
+}
+
+.banner-backdrop {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+}
+
+.bc1 {
+    padding: 120px 0px 32px 0px;
+}
+
+/* Regras do Painel lateral */
+
+.info-panel-container {
+    margin-top: 48px;
+}
+
+/* Regras do Feed e dos Posts */
+
+.feed-container {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.post {
+    margin-bottom: 18px;
+}
+
+.post-launcher {
+    color: black;
+}
+
+.post-launcher:hover {
+    color: black
+}
+
+.post-profile-image {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+
+.post-header {
+    display: flex;
+}
+
+.post-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+
+.likeicon {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
